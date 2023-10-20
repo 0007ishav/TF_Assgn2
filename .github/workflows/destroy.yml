@@ -3,12 +3,12 @@ name: "Destroying Resources"
 on:
   workflow_dispatch:
     inputs:
-      destroy:
-        description: 'Destroy all resources'
+      region:
+        description: 'Deployment region'
         required: true
 
-env:
-  region: ap-south-1
+# env:
+#   region: ap-south-1
   
 jobs:
   deploy:
@@ -23,7 +23,7 @@ jobs:
         with:
             aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-            aws-region: ${{ env.region }}
+            aws-region: ${{ inputs.region }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
