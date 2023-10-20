@@ -1,5 +1,5 @@
 output "instance_public_ips" {
-  value = [for instance in aws_instance.ins : instance.public_ip]
+  value = [for instance in aws_instance.myInstance : instance.public_ip]
 }
 
 

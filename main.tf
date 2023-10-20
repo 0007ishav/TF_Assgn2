@@ -1,4 +1,4 @@
-resource "aws_instance" "instance" {
+resource "aws_instance" "myInstance" {
   for_each = toset(var.Name)
   ami = var.ami_value
   instance_type = var.ins_type
