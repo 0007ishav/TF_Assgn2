@@ -7,3 +7,8 @@ tags = {
     owner     = "ishav@cloudeq.com"
     purpose   = "Training"
 }
+volume_tags = {
+    name = "Ishav"
+    owner     = "ishav@cloudeq.com"
+    purpose   = "Training"
+}
