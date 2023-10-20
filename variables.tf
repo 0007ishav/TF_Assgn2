@@ -1,4 +1,4 @@
-variable "me" {
+variable "Name" {
   type        = list(string)
   description = "Name of the instance"
 }
@@ -13,13 +13,12 @@ variable "ins_type" {
   description = "Type of the instnaces"
 }
 
-variable "own" {
-  type        = string
-  description = "Owner of the instance"
+variable "tags" {
+  type = map(any)
+  description = "Give tags"
 }
 
-variable "purp" {
-  type        = string
-  description = "Purpose of creating an instance"
+variable "volume_tags" {
+  type = map(any)
+  description = "Give volume_tags"
 }
-
