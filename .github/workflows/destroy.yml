@@ -1,4 +1,4 @@
-name = "Destroying Resources"
+name: "Destroying Resources"
 
 on:
   working_dispatch:

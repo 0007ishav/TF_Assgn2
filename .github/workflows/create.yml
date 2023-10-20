@@ -1,4 +1,4 @@
-name = "Creating Resources"
+name: "Creating Resources"
 
 on:
   push:
