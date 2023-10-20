@@ -7,8 +7,8 @@ on:
         description: 'Deployment region'
         required: true
 
-env:
-  region: ap-south-1
+# env:
+#   region: ap-south-1
   
 jobs:
   deploy:
