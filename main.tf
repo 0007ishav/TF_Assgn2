@@ -16,6 +16,7 @@ resource "aws_instance" "myInstance" {
         Name = each.key
       }
 )
+}
 resource "aws_iam_user" "ishav_iam" {
   count = length(var.Name)
   name = var.Name[count.index]
