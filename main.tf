@@ -1,6 +1,6 @@
 resource "aws_instance" "myInstance" {
   for_each = toset(var.Name)
-  Name = each.key
+  
   ami = var.ami_value
   instance_type = var.ins_type
 
